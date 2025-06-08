@@ -110,9 +110,9 @@ Use `===` (strict equality) instead, and **no coercion happens**:
 
 ---
 
-## 📌 Key Takeaways
+## 📌 Key Points
 
-- Coercion is not *bad* — but you must understand when and how it happens.
+- Coercion is not *bad*, but you must understand when and how it happens.
 - Prefer **explicit coercion** to keep your code clean and readable.
 - Avoid confusing `==` coercion traps by using `===` most of the time.
 
