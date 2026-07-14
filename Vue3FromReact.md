@@ -8,7 +8,7 @@ React and Vue solve the same problem: building reactive UIs from components, but
 
 React is explicit and immutable. You never mutate state directly. You call a setter, React schedules a re-render, and the new value flows down. Everything is intentional and traceable.
 
-Vue is proxy-based and mutation-friendly. When you declare reactive state, Vue wraps it in a Proxy that intercepts every read and write. This means you can mutate state directly and Vue will detect it and update the DOM. It feels almost too easy at first, especially if you have spent years avoiding mutation.
+Vue is [proxy-based](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) and mutation-friendly. When you declare reactive state, Vue wraps it in a Proxy that intercepts every read and write. This means you can mutate state directly and Vue will detect it and update the DOM. It feels almost too easy at first, especially if you have spent years avoiding mutation. Let me be clear here: I only thought proxies were a network thing, not a JS concept as well. I learned this concept in the process of understanding why destructuring broke my store... :) 
 
 Neither approach is wrong. They are different contracts. Once you understand which contract Vue is using, everything else makes sense.
 
